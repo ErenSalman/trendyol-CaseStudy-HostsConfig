@@ -1,0 +1,15 @@
+[all:vars]
+ansible_ssh_private_key_file = ./case.pem
+
+[servers]
+8.208.90.3 ansible_hostname=server-eren-salman2-0
+8.208.90.102 ansible_hostname=server-eren-salman2-1
+8.208.87.72 ansible_hostname=server-eren-salman2-2
+8.208.90.177 ansible_hostname=server-eren-salman2-3
+
+[updates]
+8.208.10.22 ansible_hostname=server-eren-salman-0 ansible_user=root  ansible_ssh_private_key_file=case.pem
+8.208.86.172 ansible_hostname=server-eren-salman-1 ansible_user=root  ansible_ssh_private_key_file=case.pem
+8.208.90.180 ansible_hostname=server-eren-salman-2 ansible_user=root  ansible_ssh_private_key_file=case.pem
+8.208.78.170 ansible_hostname=server-eren-salman-3 ansible_user=root  ansible_ssh_private_key_file=case.pem
+8.208.15.78 ansible_hostname=server-eren-salman-4 ansible_user=root  ansible_ssh_private_key_file=case.pem
